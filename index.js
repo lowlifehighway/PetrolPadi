@@ -1,7 +1,7 @@
 const accordionItems = document.querySelectorAll('.accordion-item');
 const heroSection = document.querySelector('#hero');
 const header = document.querySelector('header');
-const headerActions = document.querySelector('header > header-actions');
+const headerActions = document.querySelector('header > .header-actions');
 const menuButton = document.querySelector('.header-menu');
 const menuIcon = document.querySelector('.header-menu img');
 const nav = document.querySelector('header nav');
