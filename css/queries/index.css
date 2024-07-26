@@ -93,6 +93,7 @@
   .overlay {
     position: absolute;
     top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
@@ -155,8 +156,11 @@
     font-size: 1.2rem;
   }
   #partners {
-    padding: 6.4rem 2.4rem;
+    padding: 6.4rem 0rem;
     text-align: center;
+  }
+  #partners span {
+    padding: 0 2.4rem;
   }
   #benefits {
     padding: 6.4rem 2.4rem;

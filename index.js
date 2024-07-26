@@ -1,10 +1,11 @@
 const accordionItems = document.querySelectorAll('.accordion-item');
 const heroSection = document.querySelector('#hero');
 const header = document.querySelector('header');
-const headerActions = document.querySelector('header > div');
+const headerActions = document.querySelector('header > header-actions');
 const menuButton = document.querySelector('.header-menu');
 const menuIcon = document.querySelector('.header-menu img');
 const nav = document.querySelector('header nav');
+const navButton1 = nav.querySelector('a');
 const overlay = document.querySelector('.overlay');
 let menuClosed = true;
 menuButton.addEventListener('click', () => {
@@ -21,6 +22,13 @@ menuButton.addEventListener('click', () => {
     document.documentElement.style.overflow = '';
     menuClosed = true;
   }
+});
+navButton1.addEventListener('click', () => {
+  nav.classList.add('mobile-hidden');
+  overlay.classList.add('hidden');
+  menuIcon.src = './images/HambergerMenu-Bold-44px.svg';
+  document.documentElement.style.overflow = '';
+  menuClosed = true;
 });
 
 accordionItems.forEach((item) => {
